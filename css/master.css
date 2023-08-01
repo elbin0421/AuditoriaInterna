@@ -1,0 +1,469 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../img/bg.jpeg) no-repeat center top;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+/*diseño del login*/
+.login-box {
+  width: 320px;
+  height: 420px;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  border-radius:10px !important;
+}
+
+.login-box .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+.login-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.login-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.login-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-box input[type="text"], .login-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.login-box input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #b80f22;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.login-box input[type="submit"]:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+
+.login-box a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.login-box a:hover {
+  color: #fff;
+}
+
+/*=================*/
+/*formunlarios nuevo registro*/
+.form-horizontal{
+	  width: 700px !important;
+	  height: 900px !important;
+	  background: #000;
+	  color: #fff;
+	  top: 54%;
+	  left: 50%;
+	  position: absolute;
+	  transform: translate(-50%, -50%);
+	  box-sizing: border-box;
+	  padding: 70px 30px;
+	  border-radius:10px !important;
+    font: bold;
+}
+/*boton ingresar*/
+.form-horizontal input[type="submit"] {
+	  border: none !important;
+	  outline: none !important;
+	  width: 40% !important;
+	  height: 40px !important;
+	  background: #b80f22 !important;
+	  color: #fff !important;
+	  font-size: 18px !important;
+	  border-radius: 20px !important;
+}
+
+.form-horizontal input[type="submit"]:hover {
+	  cursor: pointer !important;
+	  background: #ffc107 !important;
+	  color: #000 !important;
+}
+/*boton regresar*/
+.form-horizontal [type="cancelar"] {
+	  border: none !important;
+	  outline: none !important;
+	  width: 40% !important;
+	  height: 40px !important;
+	  background: #b80f22 !important;
+	  color: #fff !important;
+	  font-size: 18px !important;
+	  border-radius: 20px !important;
+}
+
+.form-horizontal[type="cancelar"]:hover {
+	  cursor: pointer !important;
+	  background: #ffc107 !important;
+	  color: #000 !important;
+}
+
+.form-horizontal .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+/*DISEÑO DE REGISTRO*/
+/*====================*/
+
+
+.register-box {
+  width: 320px;
+  height: 630px;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  border-radius:10px;
+}
+
+.register-box .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+.register-box h1 {
+  margin: 0;
+  padding: 0 0 0px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.register-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.register-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.register-box input[type="text"], .register-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.register-box input[type="submit"] {
+  border: none !important;
+  outline: none !important;
+  width: 100% !important;
+  height: 40px !important;
+  background: #b80f22 !important;
+  color: #fff !important;
+  font-size: 18px !important;
+  border-radius: 20px !important;
+}
+
+.register-box input[type="submit"]:hover {
+  cursor: pointer !important;
+  background: #ffc107 !important;
+  color: #000 !important;
+}
+
+.register-box a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.register-box a:hover {
+  color: #fff;
+}
+/*=================*/
+.register-box input[type="reset"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #b80f22;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.register-box input[type="reset"]:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+
+/*DISEÑO DE CAMBIAR PASSWORD*/
+/*====================*/
+
+
+.reset-password {
+  width: 320px;
+  height: 630px;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  border-radius:10px;
+}
+
+.reset-password .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+.reset-password h2 {
+  margin: 0;
+  padding: 0 0 0px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.reset-password label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.reset-password input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.reset-password input[type="text"], .reset-password input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.reset-password input[type="submit"] {
+  border: none !important;
+  outline: none !important;
+  width: 100% !important;
+  height: 40px !important;
+  background: #b80f22 !important;
+  color: #fff !important;
+  font-size: 18px !important;
+  border-radius: 20px !important;
+}
+
+.reset-password input[type="submit"]:hover {
+  cursor: pointer !important;
+  background: #ffc107 !important;
+  color: #000 !important;
+}
+
+
+/*=================*/
+.reset-password [type="cancelar"] {
+  border: none ;
+  outline: none ;
+  width: 100%;
+  height: 40px ;
+  background: #b80f22 ;
+  color: #fff ;
+  font-size: 18px ;
+  border-radius: 20px ;
+}
+
+.reset-password [type="cancelar"]:hover {
+  cursor: pointer ;
+  background: #ffc107 ;
+  color: #000 ;
+}
+
+/*DISEÑO DE CAMBIAR PERFIL*/
+/*====================*/
+
+
+.content {
+  width: 703px !important;
+  height: 420px !important;
+  background: #000 !important;
+  color: #fff !important;
+  top: 50% !important;
+  left: 50% !important;
+  position: absolute !important;
+  transform: translate(-50%, -50%) !important;
+  box-sizing: border-box !important;
+  padding: 70px 30px !important;
+  border-radius:10px !important;
+}
+
+.content .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+.content h2 {
+  margin: 0;
+  padding: 0 0 0px;
+  text-align: center;
+  font-size: 22px;
+}
+
+ table caption{
+  background: #000 ;
+  font: bold;
+  font-size: 18px;
+
+ }
+ .tperfil{
+  width: 100px;
+  height: 100px;
+  background: #000 ;
+  color: white !important;
+  top: 64% !important;
+  left: 50% !important;
+  position: absolute !important;
+  transform: translate(-50%, -50%) !important;
+  box-sizing: border-box !important;
+  padding: 70px 30px !important;
+  border-radius:10px !important;
+ }
+.tperfil tfoot{
+  background: #000 !important;
+  color: black; !important;
+
+}
+#tab{
+  text-align: center !important;
+  color: white !important;
+
+}
+
+/*formunlarios nuevo registro*/
+.form-horizon{
+    width: 700px !important;
+    height: 700px !important;
+    background: #000 !important;
+    color: #fff !important;
+    top: 50% !important;
+    left: 50% !important;
+    position: absolute;
+    transform: translate(-50%, -50%) !important;
+    box-sizing: border-box !important;
+    padding: 70px 30px !important;
+    border-radius:10px !important;
+}
+/*boton ingresar*/
+.form-horizon input[type="submit"] {
+    border: none !important;
+    outline: none !important;
+    width: 40% !important;
+    height: 40px !important;
+    background: #b80f22 !important;
+    color: #fff !important;
+    font-size: 18px !important;
+    border-radius: 20px !important;
+}
+
+.form-horizon input[type="submit"]:hover {
+    cursor: pointer !important;
+    background: #ffc107 !important;
+    color: #000 !important;
+}
+/*boton regresar*/
+.form-horizon [type="cancelar"] {
+    border: none !important;
+    outline: none !important;
+    width: 40% !important;
+    height: 40px !important;
+    background: #b80f22 !important;
+    color: #fff !important;
+    font-size: 18px !important;
+    border-radius: 20px !important;
+}
+
+.form-horizon [type="cancelar"]:hover {
+    cursor: pointer !important;
+    background: #ffc107 !important;
+    color: #000 !important;
+}
+
+.form-horizon .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+.row{
+  color: white !important;
+ 
+}
+#titulo{
+  color: white !important;
+}

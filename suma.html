@@ -1,0 +1,79 @@
+
+
+<!DOCTYPE html>
+
+<body>
+<head>
+<script src="suma.js"></script>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+
+<script > // Cada vez que se pulse una tecla, controlamos que sea numerica
+        $("#suma input").keypress(function(event) {
+            //obtenemos la tecla pulsada
+            var valueKey=String.fromCharCode(event.which);
+            //obtenemos el valor ascii de la tecla pulsada
+            var keycode=event.which;
+            
+            // Si NO pulsamos un numero, un punto, la tecla suprimir
+            // la tecla backspace o el simobolo "-" (45), cancelamos la pulsacion
+            if(valueKey.search('[0-9|\.]')!=0 && keycode!=8 && keycode!=46 && keycode!=45)
+            {
+                // anulamos la pulsacion de la tecla
+                return false;
+            }
+        });
+        
+        // evento que se ejecuta cada vez que se suelte la tecla en cualquiera de
+        // los tres inputs
+        $("#suma input").keyup(function(event) {
+            calcular();
+        });
+        
+        // Calculamos la suma de los dos valores
+        function calcular()
+        {
+            var valor1=validarNumero('#valor1');
+            var valor2=validarNumero('#valor2');
+            
+            $("#total").val(valor1+valor2);
+        }
+        
+        // Funcion para validar que el numero sea correcto, y para cambiar el color
+        // del marco en caso de error
+        function validarNumero(id)
+        {
+            if($.isNumeric($(id).val()))
+            {
+                $(id).css('border-color','#808080');
+                return parseFloat($(id).val());
+            }else if($(id).val()==""){
+                $(id).css('border-color','#808080');
+                return 0;
+            }else{
+                $(id).css('border-color','#f00');
+                return 0;
+            }
+        }</script>
+
+<span>Valor #1</span>
+<input type="text" id="txt_campo_1" class="monto" onkeyup="sumar();" />
+<br/>
+
+<span>Valor #2</span>
+<input type="text" id="txt_campo_2" class="monto" onkeyup="sumar();" />
+<br/>
+
+<span>Valor #3</span>
+<input type="text" id="txt_campo_3" class="monto" onkeyup="sumar();" />
+<br/>
+
+<span>El resultado es: </span> <span id="spTotal"></span>
+<div class='text'>Total</div>
+<input type='text' name='spTotal' id='spTotal' disabled='disabled'>
+
+
+</body>
+
+</html>

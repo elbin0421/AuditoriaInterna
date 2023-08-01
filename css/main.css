@@ -1,0 +1,91 @@
+
+/*header{
+    background: #8E2DE2;
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+}*/
+
+/*estilos para la tabla*/
+table th {
+    background-color: #979A9A !important;
+    color: white;
+}
+#example {
+    color: #5D6D7E !important;
+}
+table>tbody>tr>td {
+    vertical-align: middle !important;
+}
+
+/*para alinear los botones y cuadro de busqueda*/
+.btn-group, .btn-group-vertical {
+    position: absolute !important;
+	
+}
+.btn-new {
+    position: absolute !important;
+    
+}
+
+/*alinear boton nuevo*/
+/*====================*/
+.table-boton {
+  float: left!important;
+  width: 100%!important;
+}
+
+.table-boton tr td {
+  padding: 15px!important;
+}
+
+.btn-primary {
+  -webkit-border-radius: 4!important;
+  -moz-border-radius: 4!important;
+  border-radius: 4px!important;
+  text-shadow: 1px 1px 15px #666666!important;
+  font-family: Arial!important;
+  color: #ffffff!important;
+  font-size: 15px!important;
+  padding: 10px 30px!important;
+  /*background: #88dd77;*/
+  border: solid #000000 1px!important;
+  text-decoration: none!important;
+  width: 10%!important;
+}
+
+.btn-primary:hover {
+  text-shadow: 1px 1px 15px #666666!important;
+  text-decoration: none!important;
+}
+/*cambiar color al pasar el mouse*/
+#example tr:hover {
+  background-color: #D5D3D3 !important;
+  cursor: pointer;
+}
+
+#titulo{
+  height:50px !important;
+  margin: 0.1em auto;
+  background: rgb(130,111,119);
+  background: radial-gradient(circle, rgba(130,111,119,1) 0%, rgba(148,187,233,1) 100%);
+  color:white !important;
+  font:bold !important;
+  font-family:consola;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
